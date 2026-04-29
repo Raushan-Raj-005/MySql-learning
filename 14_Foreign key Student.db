@@ -1,0 +1,38 @@
+USE STUDENT;
+
+            -- Create New table inside Student database & connect uesr table to addresses table 
+                                 --  Using "CONSTRAINT FOREIGN KEY"  
+           
+           
+-- Drop Table if exists addresses;
+-- Create table addresses(id Int auto_increment primary key,
+-- user_id INT,
+-- City varchar(100),
+-- State varchar(100),
+-- pincode varchar(100), 
+-- CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE  
+-- );
+
+
+
+                              -- Data insert in addresses table
+
+-- INSERT INTO addresses (user_id, city, state, pincode) VALUES
+-- (1, 'Patna', 'Bihar', '800001'),
+-- (2, 'Delhi', 'Delhi', '110001'),
+-- (3, 'Mumbai', 'Maharashtra', '400001'),
+-- (4, 'Lucknow', 'Uttar Pradesh', '226001'),
+-- (5, 'Kolkata', 'West Bengal', '700001'),
+-- (6, 'Jaipur', 'Rajasthan', '302001'),
+-- (7, 'Bhopal', 'Madhya Pradesh', '462001'),
+-- (8, 'Ranchi', 'Jharkhand', '834001'),
+-- (9, 'Chennai', 'Tamil Nadu', '600001');
+
+
+
+-- Delete from addresses WHERE id = 2;
+-- Delete from users WHERE id = 2;
+
+
+select* from addresses;
+select* from users;
